@@ -1,0 +1,107 @@
+# Specifies intentionally untracked file system entries to ignore.
+#
+# Notes:
+# 1. Do not commit .gitignore files in sub directories of the repository,
+# as they would have to be explicitly excluded when generating the installer,
+# building the project and in other situations.
+# 2. Use the full path to a dir when you want to exclude a directory
+# and everything it contains. Start with repo-root, which is "/",
+# and do NOT use a "/" at the end, as this would fail if that dir is a symlink.
+# good example:
+# /signing/node
+# bad examples:
+# signing/node
+# /signing/node/
+#
+# For more details about how this file works, see:
+# http://www.kernel.org/pub/software/scm/git/docs/gitignore.html
+
+# OS or Editor folders
+.cache
+.project
+.settings
+.tmproj
+*.sublime-project
+*.sublime-workspace
+.idea
+.vs
+*.swp
+.vscode/
+*.iml
+
+## OS X
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+.Spotlight-V100
+._*
+.Trashes
+
+## Linux
+*~
+
+## Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Dependency directories
+vendor/
+
+# node
+node_modules
+npm-debug.log
+
+# Misc always-ignore extensions
+*.o
+*.so
+*.a
+*.seed
+*.diff
+*.err
+*.gch
+*.dir
+*.class
+*.com
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.swn
+*.swm
+*.vi
+*.obj
+*.dll
+*.exe
+*.lo
+*.la
+*.zip
+*.7z
+*.csv
+*.dat
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.out
+*.pid
+
+# Folders to ignore
+.tmp
+_tmp
+/build
+/Debug
+/Release
+*bin
+# Tests
+*.test
+
