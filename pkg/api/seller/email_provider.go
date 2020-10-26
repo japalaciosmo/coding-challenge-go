@@ -39,7 +39,7 @@ func emailSender(name,email, product string) error {
 	from := "go.challenge.gfg@gmail.com"
 	password := "thisIsAgoChallenge"
 	// Receiver email address.
-	to := []string{"japalaciosmo@gmail.com"}
+	to := []string{ email}
 	// Message.
 	mime := "MIME-version: 1.0;\nContent-Type: text/plain; charset=\"UTF-8\";\n\n"
 	subject := "Subject: " + "Stock change" + "!\n"
