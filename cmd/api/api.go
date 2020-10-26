@@ -2,11 +2,12 @@ package main
 
 import (
 	"coding-challenge-go/pkg/api"
-	"os"
+	"database/sql"
+	_ "github.com/go-sql-driver/mysql"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
-	"database/sql"
-	_ "github.com/go-sql-driver/mysql")
+	"os"
+)
 
 func main() {
 	zerolog.TimeFieldFormat = zerolog.TimeFormatUnixMs
